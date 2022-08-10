@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10
+          
+      - name: Electron Builder Action
+        uses: samuelmeuli/action-electron-builder@v1.6.0
 
       - name: Build/release Mineland MetaVerse
         uses: samuelmeuli/action-electron-builder@v1
