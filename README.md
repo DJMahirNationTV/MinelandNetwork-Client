@@ -1,3 +1,9 @@
 # MinelandMV-Client
 
-Mineland Client coming soon!
+Please do not Download from the Github Releases!
+Thanks!
+
+
+
+Status:
+(API Devlopment)
