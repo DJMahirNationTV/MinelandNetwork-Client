@@ -1,4 +1,4 @@
-# MinelandMV-Client
+# Mineland Network Client
 
 Please do not Download from the Github Releases!
 Thanks!
