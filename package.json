@@ -1,0 +1,65 @@
+{
+  "name": "Mineland Network Client",
+  "version": "1.8.9",
+  "description": "Mineland Network Client, by DJMahirNationTV.",
+  "main": "main.js",
+  "scripts": {
+    "buildGame": "cd game; ./gradlew build; cd ..",
+    "buildGameAndStart": "npm run buildGame && npm run start",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "DJMahirNationTV",
+  "license": "GPL-3.0+",
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "axios": "^0.21.4",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "hastebin": "^0.2.1",
+    "keytar": "^7.9.0",
+    "msmc": "^3.1.3",
+    "nbt": "^0.8.1",
+    "tar": "^6.1.11",
+    "unzipper": "^0.10.11"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "electron": "^18.0.1",
+    "electron-forge-maker-appimage": "github:DJMahirNationTV/electron-forge-maker-appimage"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "assets/icon"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "mineland_network_launcher",
+            "loadingGif": "assets/installing.gif"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "format": "ULFO"
+          }
+        },
+        {
+          "name": "electron-forge-maker-appimage",
+          "platforms": [
+            "linux"
+          ]
+        }
+      ]
+    }
+  }
+}
