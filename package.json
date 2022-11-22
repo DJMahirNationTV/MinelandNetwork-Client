@@ -1,6 +1,6 @@
 {
   "name": "Mineland Network Client",
-  "version": "1.8.9",
+  "version": "1.0.0",
   "description": "Mineland Network Client, by DJMahirNationTV.",
   "main": "main.js",
   "scripts": {
